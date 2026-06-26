@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📱 Mini Social Media Platform</h1>
+
+    <!-- User Profile Section -->
+
+    <div class="card">
+        <h2>Create User Profile</h2>
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="text" id="profilePic" placeholder="Profile Image URL">
+
+        <button onclick="createUser()">
+            Create Profile
+        </button>
+    </div>
+
+    <!-- Create Post -->
+
+    <div class="card">
+
+        <h2>Create Post</h2>
+
+        <input type="text" id="postUser" placeholder="Username">
+
+        <textarea id="postContent"
+        placeholder="What's on your mind?"></textarea>
+
+        <button onclick="createPost()">
+            Post
+        </button>
+
+    </div>
+
+    <!-- Users -->
+
+    <div class="card">
+
+        <h2>Users</h2>
+
+        <div id="users"></div>
+
+    </div>
+
+    <!-- Posts -->
+
+    <div class="card">
+
+        <h2>Posts Feed</h2>
+
+        <div id="posts"></div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
